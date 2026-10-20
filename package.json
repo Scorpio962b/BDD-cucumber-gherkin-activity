@@ -1,0 +1,20 @@
+{
+  "name": "flash-data-activity",
+  "version": "1.0.0",
+  "description": "Automated Cucumber and Playwright test suite for Flash Buy Data Bundle page",
+  "main": "index.js",
+  "scripts": {
+    "start-app": "node data-app/server.js",
+    "test": "cucumber-js",
+    "test:smoke": "cucumber-js --tags \"@smoke\"",
+    "test:negative": "cucumber-js --tags \"@negative\""
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.0",
+    "playwright": "^1.45.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
