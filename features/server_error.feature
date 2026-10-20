@@ -13,4 +13,4 @@ Feature: Server Error Handling
     When I enter the mobile number "0821234567"
     And I select the bundle "500MB"
     And I click "Buy data"
-    Then the page displays the message "We couldn’t complete your purchase. Please try again." 
+    Then the page displays the message "We couldn't complete your purchase. Please try again."

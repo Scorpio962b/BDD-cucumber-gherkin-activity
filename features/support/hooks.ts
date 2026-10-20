@@ -12,15 +12,16 @@ Before(async function (this: FlashWorld) {
   this.browser = globalBrowser;
   this.context = await this.browser.newContext();
   this.page = await this.context.newPage();
-  
+
   this.apiClient = await request.newContext({
     baseURL: 'http://localhost:3003'
   });
 
-  // Create isolated account per scenario via API (default R300.00)
+  // Generate an isolated account via API per scenario
   const response = await this.apiClient.post('/api/accounts', {
     data: { startingBalance: '300.00' }
   });
+
   const body = await response.json();
   this.accountId = body.accountId;
   this.startingBalance = body.balance;

@@ -31,4 +31,4 @@ Feature: Buy Data Bundle Core Scenarios
     When I enter the mobile number "0821234567"
     And I select the bundle "500MB"
     And I click "Buy data"
-    Then the page displays the message "You can buy up to 3 data bundles a day" 
+    Then the page displays the message "You can buy up to 3 data bundles a day"

@@ -22,5 +22,4 @@ export class FlashWorld extends World implements CustomWorld {
     super(options);
   }
 }
-
 setWorldConstructor(FlashWorld);

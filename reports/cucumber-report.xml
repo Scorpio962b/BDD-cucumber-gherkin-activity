@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="1.88" tests="12" skipped="0" failures="12" errors="0" timestamp="2026-10-20T18:08:00.815Z">
+  <testcase classname="Buy Data Bundle Core Scenarios" name="Successful data bundle purchase verified on page and API" time="0.23">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "0821234567".................................skipped
+And I select the bundle "1GB"...............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "1GB data bundle purchased"..............skipped
+And a valid purchase reference is displayed.................................skipped
+And the updated balance displays "201.00"...................................skipped
+And the purchase is recorded in the account history via API.................skipped]]></system-out>
+  </testcase>
+  <testcase classname="Buy Data Bundle Core Scenarios" name="Purchasing multiple bundles in a single visit using a data table" time="0.114">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I purchase the following bundles sequentially:.........................skipped
+Then the final balance displays "146.00"....................................skipped
+And 2 purchases are confirmed in the API purchase history...................skipped]]></system-out>
+  </testcase>
+  <testcase classname="Buy Data Bundle Core Scenarios" name="Exceeding the daily limit of 3 data bundle purchases" time="0.098">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+Given 3 data bundles have already been purchased via the API for this account..skipped
+When I enter the mobile number "0821234567".................................skipped
+And I select the bundle "500MB".............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "You can buy up to 3 data bundles a day"..skipped]]></system-out>
+  </testcase>
+  <testcase classname="Purchase Validation Rules" name="Business rules validation for bundle purchases - Accepted Purchases - #1.1" time="0.078">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "0611234567".................................skipped
+And I select the bundle "500MB".............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "500MB data bundle purchased"............skipped]]></system-out>
+  </testcase>
+  <testcase classname="Purchase Validation Rules" name="Business rules validation for bundle purchases - Accepted Purchases - #1.2" time="0.077">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "0839876543".................................skipped
+And I select the bundle "2GB"...............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "2GB data bundle purchased"..............skipped]]></system-out>
+  </testcase>
+  <testcase classname="Purchase Validation Rules" name="Business rules validation for bundle purchases - Rejected Purchases - #2.1" time="0.077">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "0121234567".................................skipped
+And I select the bundle "1GB"...............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "Enter a valid SA mobile number".........skipped]]></system-out>
+  </testcase>
+  <testcase classname="Purchase Validation Rules" name="Business rules validation for bundle purchases - Rejected Purchases - #2.2" time="0.095">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "08212345"...................................skipped
+And I select the bundle "500MB".............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "Enter a valid SA mobile number".........skipped]]></system-out>
+  </testcase>
+  <testcase classname="Purchase Validation Rules" name="Business rules validation for bundle purchases - Rejected Purchases - #2.3" time="0.087">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "+27821234567"...............................skipped
+And I select the bundle "1GB"...............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "Enter a valid SA mobile number".........skipped]]></system-out>
+  </testcase>
+  <testcase classname="Purchase Validation Rules" name="Business rules validation for bundle purchases - Rejected Purchases - #2.4" time="0.07">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "082 123 4567"...............................skipped
+And I select the bundle "1GB"...............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "Enter a valid SA mobile number".........skipped]]></system-out>
+  </testcase>
+  <testcase classname="Purchase Validation Rules" name="Business rules validation for bundle purchases - Rejected Purchases - #2.5" time="0.067">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "0821234567".................................skipped
+And I select the bundle "None"..............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "Choose a data bundle"...................skipped]]></system-out>
+  </testcase>
+  <testcase classname="Purchase Validation Rules" name="Business rules validation for bundle purchases - Rejected Purchases - #2.6" time="0.064">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+When I enter the mobile number "0821234567".................................skipped
+And I select the bundle "10GB"..............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "Not enough funds in your Flash wallet"..skipped]]></system-out>
+  </testcase>
+  <testcase classname="Server Error Handling" name="Handling server 500 failure during purchase" time="0.067">
+    <failure/>
+    <system-out><![CDATA[Given a fresh account exists with a balance of "300.00".....................undefined
+And I am on the Buy Data page for my account................................skipped
+Given the purchase API service is returning a 500 error.....................ambiguous
+When I enter the mobile number "0821234567".................................skipped
+And I select the bundle "500MB".............................................skipped
+And I click "Buy data"......................................................skipped
+Then the page displays the message "We couldn't complete your purchase. Please try again."..skipped]]></system-out>
+  </testcase>
+</testsuite>

@@ -25,10 +25,11 @@ async function submitPurchaseForm(world: FlashWorld, mobile: string, bundle: str
 }
 
 // --- GIVEN STEPS ---
-Given('a fresh account exists with a balance of {string}', async function (this: FlashWorld, balance: string) {
+Given('a fresh account exists with a balance of {rand}', async function (this: FlashWorld, balance: string) {
   expect(this.accountId).toBeDefined();
   this.startingBalance = balance;
 });
+
 
 Given('I am on the Buy Data page for my account', async function (this: FlashWorld) {
   await this.page!.goto(`http://localhost:3003/data-bundle?account=${this.accountId}`);
@@ -113,4 +114,16 @@ Then('{int} purchases are confirmed in the API purchase history', async function
   expect(response.status()).toBe(200);
   const purchases = await response.json();
   expect(purchases.length).toBe(expectedCount);
+});
+
+Given('the purchase API service is returning a 500 error', async function (this: FlashWorld) {
+  // Intercept any POST calls to the purchase API endpoint
+  await this.page!.route('**/api/accounts/*/bundles', async (route) => {
+    // Fulfill the request immediately with a 500 status code
+    await route.fulfill({
+      status: 500,
+      contentType: 'application/json',
+      body: JSON.stringify({ result: 'error', message: 'Internal Server Error' })
+    });
+  });
 });
