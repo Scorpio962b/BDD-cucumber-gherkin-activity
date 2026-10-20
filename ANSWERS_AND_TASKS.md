@@ -3,15 +3,15 @@
 ## Task 5: Playwright Locators Selection Strategy
 | Element | Selected Locator Strategy | Justification |
 |---|---|---|
-| **Mobile Number Field** | `#mobileNumber, input[name="mobileNumber"]` | Uses standard ID with fallback name attribute for reliable field selection. |
-| **Bundle Dropdown List** | `#bundleCode, select[name="bundleCode"]` | Selects `<select>` directly to interact with native Playwright `.selectOption()`. |
-| **Buy Data Button** | `button:has-text("Buy data"), #buyBtn` | Combines visible user text matching with fallback element ID. |
-| **Message Label** | `#message, .message` | Unique element container where success/error notification banners render. |
-| **Reference Label** | `#reference, .reference` | Selector for transaction reference display (e.g. `Reference: DB-000001`). |
-| **Balance Label** | `#balance, .balance` | Component displaying live wallet balance text. |
+| **Mobile Number Field** | `#mobile` | The input's unique id on the page, so it is a stable, simple locator. |
+| **Bundle Dropdown List** | `#bundle` | Selects `<select>` directly to interact with native Playwright `.selectOption()`. |
+| **Buy Data Button** | `button:has-text("Buy data")` | Matches the button by the visible text a customer sees. |
+| **Message Label** | `[data-testid="purchase-message"]` | The data-testid on the status paragraph where success and error messages render. |
+| **Reference Label** | `[data-testid="purchase-reference"]` | The data-testid on the paragraph that shows the reference (e.g. `Reference: DB-000001`). |
+| **Balance Label** | `[data-testid="wallet-balance"]` | The data-testid on the element showing the wallet balance. |
 
 ## Task 11: Reused Step Definition Proof
-**Reused Step**: `When I click "Buy data"` (implemented in `buy_data_steps.ts`).
+**Reused Step**: `When I click "Buy data"` (implemented in `common_steps.ts`).
 Both `features/buy_data.feature` and `features/rules_validation.feature` reuse this exact step definition, as well as `When I enter the mobile number {string}` and `Then the page displays the message {string}`.
 
 ## Task 12: Tagged Execution Counts

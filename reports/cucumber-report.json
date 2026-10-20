@@ -12,129 +12,132 @@
           {
             "result": {
               "status": "passed",
-              "duration": 199788900
+              "duration": 109131899
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 3625800
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 44508499
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 67732400
             },
             "arguments": [],
             "keyword": "When ",
             "line": 12,
             "name": "I enter the mobile number \"0821234567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 15536300
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I select the bundle \"1GB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 45021099
             },
             "arguments": [],
             "keyword": "And ",
             "line": 14,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10269099
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
             "name": "the page displays the message \"1GB data bundle purchased\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 17247800
             },
             "arguments": [],
             "keyword": "And ",
             "line": 16,
             "name": "a valid purchase reference is displayed",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:89"
+              "location": "features\\step_definitions\\buy_data_steps.ts:31"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3826700
             },
             "arguments": [],
             "keyword": "And ",
             "line": 17,
             "name": "the updated balance displays \"201.00\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:95"
+              "location": "features\\step_definitions\\buy_data_steps.ts:37"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4692500
             },
             "arguments": [],
             "keyword": "And ",
             "line": 18,
             "name": "the purchase is recorded in the account history via API",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:105"
+              "location": "features\\step_definitions\\buy_data_steps.ts:47"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 22635400
+              "duration": 16084899
             },
             "keyword": "After",
             "hidden": true
@@ -158,38 +161,41 @@
           {
             "result": {
               "status": "passed",
-              "duration": 81473399
+              "duration": 59356900
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 562199
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 38173099
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1183451800
             },
             "arguments": [
               {
@@ -219,39 +225,39 @@
             "line": 21,
             "name": "I purchase the following bundles sequentially:",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:75"
+              "location": "features\\step_definitions\\buy_data_steps.ts:22"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5317700
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 25,
             "name": "the final balance displays \"146.00\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:100"
+              "location": "features\\step_definitions\\buy_data_steps.ts:42"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5165799
             },
             "arguments": [],
             "keyword": "And ",
             "line": 26,
             "name": "2 purchases are confirmed in the API purchase history",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:112"
+              "location": "features\\step_definitions\\buy_data_steps.ts:54"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 29502899
+              "duration": 10392000
             },
             "keyword": "After",
             "hidden": true
@@ -270,103 +276,106 @@
           {
             "result": {
               "status": "passed",
-              "duration": 79570999
+              "duration": 60258900
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 607699
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 35620600
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 9565400
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 30,
             "name": "3 data bundles have already been purchased via the API for this account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:38"
+              "location": "features\\step_definitions\\buy_data_steps.ts:10"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 44968499
             },
             "arguments": [],
             "keyword": "When ",
             "line": 31,
             "name": "I enter the mobile number \"0821234567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7432300
             },
             "arguments": [],
             "keyword": "And ",
             "line": 32,
             "name": "I select the bundle \"500MB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 36980199
             },
             "arguments": [],
             "keyword": "And ",
             "line": 33,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 19895899
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 34,
             "name": "the page displays the message \"You can buy up to 3 data bundles a day\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 9322299
+              "duration": 7427899
             },
             "keyword": "After",
             "hidden": true
@@ -401,90 +410,93 @@
           {
             "result": {
               "status": "passed",
-              "duration": 66655899
+              "duration": 54960600
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 706899
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 33614800
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 29588099
             },
             "arguments": [],
             "keyword": "When ",
             "line": 11,
             "name": "I enter the mobile number \"0611234567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6567399
             },
             "arguments": [],
             "keyword": "And ",
             "line": 12,
             "name": "I select the bundle \"500MB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 45208599
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 9586899
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "the page displays the message \"500MB data bundle purchased\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 9262100
+              "duration": 8640800
             },
             "keyword": "After",
             "hidden": true
@@ -508,90 +520,93 @@
           {
             "result": {
               "status": "passed",
-              "duration": 66340999
+              "duration": 49930699
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 563499
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 32697200
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 26654099
             },
             "arguments": [],
             "keyword": "When ",
             "line": 11,
             "name": "I enter the mobile number \"0839876543\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6094199
             },
             "arguments": [],
             "keyword": "And ",
             "line": 12,
             "name": "I select the bundle \"2GB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 42592899
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 48620599
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "the page displays the message \"2GB data bundle purchased\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 8596500
+              "duration": 8641500
             },
             "keyword": "After",
             "hidden": true
@@ -615,90 +630,93 @@
           {
             "result": {
               "status": "passed",
-              "duration": 62286900
+              "duration": 55088899
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 609900
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 36241599
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 33118599
             },
             "arguments": [],
             "keyword": "When ",
             "line": 11,
             "name": "I enter the mobile number \"0121234567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7280099
             },
             "arguments": [],
             "keyword": "And ",
             "line": 12,
             "name": "I select the bundle \"1GB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 44245200
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 12663600
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "the page displays the message \"Enter a valid SA mobile number\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 11823300
+              "duration": 9155699
             },
             "keyword": "After",
             "hidden": true
@@ -722,90 +740,93 @@
           {
             "result": {
               "status": "passed",
-              "duration": 80914200
+              "duration": 62082799
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 573699
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 33248199
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 36406699
             },
             "arguments": [],
             "keyword": "When ",
             "line": 11,
             "name": "I enter the mobile number \"08212345\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7848700
             },
             "arguments": [],
             "keyword": "And ",
             "line": 12,
             "name": "I select the bundle \"500MB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 35522999
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 11494400
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "the page displays the message \"Enter a valid SA mobile number\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 11853400
+              "duration": 8218100
             },
             "keyword": "After",
             "hidden": true
@@ -829,90 +850,93 @@
           {
             "result": {
               "status": "passed",
-              "duration": 73389500
+              "duration": 52947500
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 600699
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 33659700
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 29564999
             },
             "arguments": [],
             "keyword": "When ",
             "line": 11,
             "name": "I enter the mobile number \"+27821234567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6867699
             },
             "arguments": [],
             "keyword": "And ",
             "line": 12,
             "name": "I select the bundle \"1GB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 36867500
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10503800
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "the page displays the message \"Enter a valid SA mobile number\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 10934200
+              "duration": 8209200
             },
             "keyword": "After",
             "hidden": true
@@ -936,90 +960,93 @@
           {
             "result": {
               "status": "passed",
-              "duration": 60347999
+              "duration": 53449200
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 596500
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 32672899
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 30949599
             },
             "arguments": [],
             "keyword": "When ",
             "line": 11,
             "name": "I enter the mobile number \"082 123 4567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6583200
             },
             "arguments": [],
             "keyword": "And ",
             "line": 12,
             "name": "I select the bundle \"1GB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 36394800
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10565499
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "the page displays the message \"Enter a valid SA mobile number\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 7940999
+              "duration": 8807000
             },
             "keyword": "After",
             "hidden": true
@@ -1043,90 +1070,93 @@
           {
             "result": {
               "status": "passed",
-              "duration": 57216499
+              "duration": 51471599
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 538199
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 31502300
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 26794700
             },
             "arguments": [],
             "keyword": "When ",
             "line": 11,
             "name": "I enter the mobile number \"0821234567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 141899
             },
             "arguments": [],
             "keyword": "And ",
             "line": 12,
             "name": "I select the bundle \"None\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 33705500
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 45038400
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "the page displays the message \"Choose a data bundle\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 7615700
+              "duration": 8791699
             },
             "keyword": "After",
             "hidden": true
@@ -1150,90 +1180,93 @@
           {
             "result": {
               "status": "passed",
-              "duration": 55860299
+              "duration": 49581000
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 556599
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 30438699
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 29165200
             },
             "arguments": [],
             "keyword": "When ",
             "line": 11,
             "name": "I enter the mobile number \"0821234567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 6398299
             },
             "arguments": [],
             "keyword": "And ",
             "line": 12,
             "name": "I select the bundle \"10GB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 45238500
             },
             "arguments": [],
             "keyword": "And ",
             "line": 13,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 11589800
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
             "name": "the page displays the message \"Not enough funds in your Flash wallet\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 6765599
+              "duration": 11169499
             },
             "keyword": "After",
             "hidden": true
@@ -1268,100 +1301,106 @@
           {
             "result": {
               "status": "passed",
-              "duration": 57222700
+              "duration": 62601300
             },
             "keyword": "Before",
             "hidden": true
           },
           {
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 646499
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "a fresh account exists with a balance of \"300.00\""
+            "name": "a fresh account exists with a balance of \"300.00\"",
+            "match": {
+              "location": "features\\step_definitions\\common_steps.ts:9"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 43168100
             },
             "arguments": [],
             "keyword": "And ",
             "line": 8,
             "name": "I am on the Buy Data page for my account",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:34"
+              "location": "features\\step_definitions\\common_steps.ts:14"
             }
           },
           {
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 5033499
             },
             "arguments": [],
             "keyword": "Given ",
             "line": 12,
-            "name": "the purchase API service is returning a 500 error"
+            "name": "the purchase API service is returning a 500 error",
+            "match": {
+              "location": "features\\step_definitions\\server_error_steps.ts:6"
+            }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 32284200
             },
             "arguments": [],
             "keyword": "When ",
             "line": 13,
             "name": "I enter the mobile number \"0821234567\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:60"
+              "location": "features\\step_definitions\\common_steps.ts:19"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7600500
             },
             "arguments": [],
             "keyword": "And ",
             "line": 14,
             "name": "I select the bundle \"500MB\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:64"
+              "location": "features\\step_definitions\\common_steps.ts:23"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 44688099
             },
             "arguments": [],
             "keyword": "And ",
             "line": 15,
             "name": "I click \"Buy data\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:71"
+              "location": "features\\step_definitions\\common_steps.ts:30"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7505700
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
             "name": "the page displays the message \"We couldn't complete your purchase. Please try again.\"",
             "match": {
-              "location": "features\\step_definitions\\buy_data_steps.ts:84"
+              "location": "features\\step_definitions\\common_steps.ts:35"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 7541500
+              "duration": 11322699
             },
             "keyword": "After",
             "hidden": true
