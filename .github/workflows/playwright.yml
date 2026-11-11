@@ -1,3 +1,36 @@
+# name: Cucumber tests
+
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#   schedule:
+#     - cron: '0 5 * * *'    # nightly, 07:00 SAST
+#   workflow_dispatch:
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     timeout-minutes: 15
+#     steps:
+#       - uses: actions/checkout@v4
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: 22
+#           cache: npm
+#       - run: npm ci
+#       - run: npx playwright install --with-deps chromium
+#       - name: Start the app
+#         run: |
+#           node data-app/server.js > server.log 2>&1 &
+#           curl -s -o /dev/null --retry-connrefused --retry 30 --retry-delay 2 http://localhost:3003/ || (cat server.log && exit 1)
+#       - run: npm test
+#       - uses: actions/upload-artifact@v4
+#         if: always()
+#         with:
+#           name: cucumber-reports
+#           path: reports/
+
 name: Cucumber tests
 
 on:
@@ -33,9 +66,9 @@ jobs:
             --source "cucumber" \
             --results reports/cucumber-report.xml \
             -- npm test
-        env:
-          TESTMO_URL: ${{ secrets.TESTMO_URL }}
-          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
+        # env:
+        #   TESTMO_URL: ${{ secrets.TESTMO_URL }}
+        #   TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
