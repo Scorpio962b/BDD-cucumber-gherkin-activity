@@ -24,7 +24,18 @@ jobs:
         run: |
           node data-app/server.js > server.log 2>&1 &
           curl -s -o /dev/null --retry-connrefused --retry 30 --retry-delay 2 http://localhost:3003/ || (cat server.log && exit 1)
-      - run: npm test
+      - run: npm install --no-save @testmo/testmo-cli
+      - run: |
+          npx testmo automation:run:submit \
+            --instance "$TESTMO_URL" \
+            --project-id 1 \
+            --name "Cucumber tests" \
+            --source "cucumber" \
+            --results reports/cucumber-report.xml \
+            -- npm test
+        env:
+          TESTMO_URL: ${{ secrets.TESTMO_URL }}
+          TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
