@@ -20,8 +20,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - run: node data-app/server.js &
-      - run: npx wait-on http://localhost:3000
+      - name: Start the app
+        run: |
+          node data-app/server.js > server.log 2>&1 &
+          npx wait-on --timeout 60000 http://127.0.0.1:3000 || (cat server.log && exit 1)
       - run: npm test
       - uses: actions/upload-artifact@v4
         if: always()
