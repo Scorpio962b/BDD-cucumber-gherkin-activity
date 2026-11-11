@@ -23,7 +23,7 @@ jobs:
       - name: Start the app
         run: |
           node data-app/server.js > server.log 2>&1 &
-          npx wait-on --timeout 60000 http://127.0.0.1:3003 || (cat server.log && exit 1)
+          curl -s -o /dev/null --retry-connrefused --retry 30 --retry-delay 2 http://localhost:3003/ || (cat server.log && exit 1)
       - run: npm test
       - uses: actions/upload-artifact@v4
         if: always()
