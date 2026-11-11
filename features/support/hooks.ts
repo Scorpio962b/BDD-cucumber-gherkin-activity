@@ -46,9 +46,9 @@ After(async function (this: FlashWorld, { result, pickle }) {
     const screenshot = await this.page.screenshot();
     this.attach(screenshot, "image/png");
     const name = pickle.name.replace(/\W+/g, "-");
-    await this.context.tracing.stop({ path: `reports/traces/${name}.zip` });
+    await this.context?.tracing.stop({ path: `reports/traces/${name}.zip` });
   } else {
-    await this.context.tracing.stop();
+    await this.context?.tracing.stop();
   }
 
   if (this.page) await this.page.close();
