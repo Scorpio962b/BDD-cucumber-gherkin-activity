@@ -6,7 +6,7 @@
   "scripts": {
     "start-app": "node data-app/server.js",
     "test": "cucumber-js",
-    "test:smoke": "cucumber-js --tags \"@smoke\"",
+    "test:fintech": "cucumber-js --tags \"@fintech\"",
     "test:negative": "cucumber-js --tags \"@negative\""
   },
   "devDependencies": {
